@@ -1,0 +1,126 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="CSV_FILES" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="551,2408" sap2010:WorkflowViewState.IdRef="CSV_FILES_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="22">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="16">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="CSV_FILES" sap:VirtualizedContainerService.HintSize="376,2203" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="sd:DataTable" Name="dtCollageDetails" />
+      <Variable x:TypeArguments="x:String" Name="StrSno" />
+      <Variable x:TypeArguments="x:String" Name="StrCollege" />
+      <Variable x:TypeArguments="x:String" Name="StrCity" />
+      <Variable x:TypeArguments="x:String" Name="StrState" />
+      <Variable x:TypeArguments="sd:DataTable" Name="dtData" />
+      <Variable x:TypeArguments="x:String" Name="StrOutput" />
+      <Variable x:TypeArguments="sd:DataTable" Name="dtData2" />
+      <Variable x:TypeArguments="x:String" Name="StrOutput2" />
+      <Variable x:TypeArguments="sd:DataTable" Name="dtBuild" />
+      <Variable x:TypeArguments="x:String" Name="StrInput" />
+      <Variable x:TypeArguments="sd:DataTable" Name="dtOutput" />
+      <Variable x:TypeArguments="x:String" Name="StrMessage" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:ReadCsvFile Encoding="{x:Null}" DataTable="[dtCollageDetails]" Delimitator="Comma" DisplayName="Read CSV" FilePath="C:\Users\User\Desktop\College Details.csv" sap:VirtualizedContainerService.HintSize="334,152" sap2010:WorkflowViewState.IdRef="ReadCsvFile_1" />
+    <ui:InputDialog Options="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="334,92" sap2010:WorkflowViewState.IdRef="InputDialog_1" IsPassword="False" Label="Please enter your S.NO" Title="S.NO">
+      <ui:InputDialog.Result>
+        <OutArgument x:TypeArguments="x:String">[StrSno]</OutArgument>
+      </ui:InputDialog.Result>
+    </ui:InputDialog>
+    <ui:InputDialog Options="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="334,92" sap2010:WorkflowViewState.IdRef="InputDialog_2" IsPassword="False" Label="Please enter COLLAGE NAME" Title="COLLEGE NAME">
+      <ui:InputDialog.Result>
+        <OutArgument x:TypeArguments="x:String">[StrCollege]</OutArgument>
+      </ui:InputDialog.Result>
+    </ui:InputDialog>
+    <ui:InputDialog Options="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="334,92" sap2010:WorkflowViewState.IdRef="InputDialog_3" IsPassword="False" Label="Enter the  city in which the college is located" Title="CITY">
+      <ui:InputDialog.Result>
+        <OutArgument x:TypeArguments="x:String">[StrCity]</OutArgument>
+      </ui:InputDialog.Result>
+    </ui:InputDialog>
+    <ui:InputDialog Options="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="334,92" sap2010:WorkflowViewState.IdRef="InputDialog_4" IsPassword="False" Label="Enter the state in where the college is located" Title="STATE">
+      <ui:InputDialog.Result>
+        <OutArgument x:TypeArguments="x:String">[StrState]</OutArgument>
+      </ui:InputDialog.Result>
+    </ui:InputDialog>
+    <ui:BuildDataTable DataTable="[dtBuild]" DisplayName="Build Data Table" sap:VirtualizedContainerService.HintSize="334,59" sap2010:WorkflowViewState.IdRef="BuildDataTable_2" TableInfo="&lt;NewDataSet&gt;&#xD;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xD;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xD;&#xA;      &lt;xs:complexType&gt;&#xD;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xD;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xD;&#xA;            &lt;xs:complexType&gt;&#xD;&#xA;              &lt;xs:sequence&gt;&#xD;&#xA;                &lt;xs:element name=&quot;S.NO&quot; type=&quot;xs:int&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;COLLEGE_x0020_NAME&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;CITY&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;STATE&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;              &lt;/xs:sequence&gt;&#xD;&#xA;            &lt;/xs:complexType&gt;&#xD;&#xA;          &lt;/xs:element&gt;&#xD;&#xA;        &lt;/xs:choice&gt;&#xD;&#xA;      &lt;/xs:complexType&gt;&#xD;&#xA;    &lt;/xs:element&gt;&#xD;&#xA;  &lt;/xs:schema&gt;&#xD;&#xA;&lt;/NewDataSet&gt;" />
+    <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[{StrSno,StrCollege,StrCity,StrState}]" DataTable="[dtBuild]" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="334,22" sap2010:WorkflowViewState.IdRef="AddDataRow_1" />
+    <ui:OutputDataTable DataTable="[dtBuild]" DisplayName="Output Data Table" sap:VirtualizedContainerService.HintSize="334,22" sap2010:WorkflowViewState.IdRef="OutputDataTable_1" Text="[StrOutput]" />
+    <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="334,59" sap2010:WorkflowViewState.IdRef="MessageBox_2" Text="[StrOutput]" />
+    <ui:WriteCsvFile Encoding="{x:Null}" AddHeaders="True" DataTable="[dtCollageDetails]" Delimitator="Comma" DisplayName="Write CSV" FilePath="C:\Users\User\Desktop\College Details.csv" sap:VirtualizedContainerService.HintSize="334,152" sap2010:WorkflowViewState.IdRef="WriteCsvFile_1" />
+    <ui:AppendCsvFile Encoding="{x:Null}" DataTable="[dtBuild]" Delimitator="Comma" DisplayName="Append to CSV" FilePath="C:\Users\User\Desktop\College Details.csv" sap:VirtualizedContainerService.HintSize="334,132" sap2010:WorkflowViewState.IdRef="AppendCsvFile_1" />
+    <ui:ReadCsvFile Encoding="{x:Null}" DataTable="[dtData2]" Delimitator="Comma" DisplayName="Read CSV" FilePath="C:\Users\User\Desktop\College Details.csv" sap:VirtualizedContainerService.HintSize="334,152" sap2010:WorkflowViewState.IdRef="ReadCsvFile_2" />
+    <ui:OutputDataTable DataTable="[dtData2]" DisplayName="Output Data Table" sap:VirtualizedContainerService.HintSize="334,22" sap2010:WorkflowViewState.IdRef="OutputDataTable_2" Text="[StrOutput2]" />
+    <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="334,59" sap2010:WorkflowViewState.IdRef="MessageBox_3" Text="[StrOutput2]" />
+    <ui:InputDialog Options="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="334,92" sap2010:WorkflowViewState.IdRef="InputDialog_5" IsPassword="False" Label="[&quot;Enter the preferred location to view the collage near by&quot;+Environment.Newline+&quot;Cuddalore&quot;+Environment.Newline+&quot;Karur&quot;+Environment.Newline+&quot;Coimbatore&quot;+Environment.Newline+&quot;Trichy&quot;+Environment.Newline+&quot;Chidabaram&quot;+Environment.Newline+&quot;Chennai&quot;]" Title="CITY">
+      <ui:InputDialog.Result>
+        <OutArgument x:TypeArguments="x:String">[StrInput]</OutArgument>
+      </ui:InputDialog.Result>
+    </ui:InputDialog>
+    <ui:FilterDataTable DataTable="[dtData2]" DisplayName="Filter Data Table" FilterRowsMode="Keep" sap:VirtualizedContainerService.HintSize="334,59" sap2010:WorkflowViewState.IdRef="FilterDataTable_1" OutputDataTable="[dtOutput]" SelectColumnsMode="Keep">
+      <ui:FilterDataTable.Filters>
+        <scg:List x:TypeArguments="ui:FilterOperationArgument" Capacity="4">
+          <ui:FilterOperationArgument BooleanOperator="And" Operator="EQ">
+            <ui:FilterOperationArgument.Column>
+              <InArgument x:TypeArguments="x:String">["CITY"]</InArgument>
+            </ui:FilterOperationArgument.Column>
+            <ui:FilterOperationArgument.Operand>
+              <InArgument x:TypeArguments="x:String">[StrInput]</InArgument>
+            </ui:FilterOperationArgument.Operand>
+          </ui:FilterOperationArgument>
+        </scg:List>
+      </ui:FilterDataTable.Filters>
+      <ui:FilterDataTable.SelectColumns>
+        <scg:List x:TypeArguments="InArgument" Capacity="4">
+          <x:Null />
+        </scg:List>
+      </ui:FilterDataTable.SelectColumns>
+    </ui:FilterDataTable>
+    <ui:OutputDataTable DataTable="[dtOutput]" DisplayName="Output Data Table" sap:VirtualizedContainerService.HintSize="334,22" sap2010:WorkflowViewState.IdRef="OutputDataTable_3" Text="[StrMessage]" />
+    <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="334,59" sap2010:WorkflowViewState.IdRef="MessageBox_1" Text="[StrMessage]" />
+  </Sequence>
+</Activity>
