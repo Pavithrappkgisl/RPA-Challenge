@@ -1,0 +1,200 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="OYO_BOOKINGS" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="597,1763" sap2010:WorkflowViewState.IdRef="OYO_BOOKINGS_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="34">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Activities.DynamicUpdate</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Excel.Activities</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Runtime.InteropServices</x:String>
+      <x:String>UiPath.Activities.Contracts</x:String>
+      <x:String>UiPath.Mail</x:String>
+      <x:String>UiPath.Mail.SMTP.Activities</x:String>
+      <x:String>UiPath.Mail.Activities</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="25">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>UiPath.Activities.Contracts</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities.Design</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="OYO_BOOKINGS" sap:VirtualizedContainerService.HintSize="518,1658" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:OpenBrowser CommunicationMethod="{x:Null}" Hidden="{x:Null}" NewSession="{x:Null}" Private="{x:Null}" UiBrowser="{x:Null}" BrowserType="IE" DisplayName="Open Browser" sap:VirtualizedContainerService.HintSize="476,589" sap2010:WorkflowViewState.IdRef="OpenBrowser_2" Url="https://www.oyorooms.com/">
+      <ui:OpenBrowser.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="376,490" sap2010:WorkflowViewState.IdRef="Sequence_3">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ui:Hover DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateHover="{x:Null}" DisplayName="Hover 'H2'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="Hover_5">
+              <ui:Hover.CursorPosition>
+                <ui:CursorPosition Position="Center">
+                  <ui:CursorPosition.OffsetX>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:CursorPosition.OffsetX>
+                  <ui:CursorPosition.OffsetY>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:CursorPosition.OffsetY>
+                </ui:CursorPosition>
+              </ui:Hover.CursorPosition>
+              <ui:Hover.Target>
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="6fe185e449bafca56f9afb9cfffb6330" Selector="&lt;webctrl aaname='Pune' tag='H2' /&gt;">
+                  <ui:Target.TimeoutMS>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:Target.TimeoutMS>
+                  <ui:Target.WaitForReady>
+                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                  </ui:Target.WaitForReady>
+                </ui:Target>
+              </ui:Hover.Target>
+            </ui:Hover>
+            <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" DisplayName="Send Hotkey" sap:VirtualizedContainerService.HintSize="334,116" sap2010:WorkflowViewState.IdRef="SendHotkey_1" Key="pgdn" KeyModifiers="None" SpecialKey="True">
+              <ui:SendHotkey.Target>
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}">
+                  <ui:Target.TimeoutMS>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:Target.TimeoutMS>
+                  <ui:Target.WaitForReady>
+                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                  </ui:Target.WaitForReady>
+                </ui:Target>
+              </ui:SendHotkey.Target>
+            </ui:SendHotkey>
+            <ui:ClickText ContinueOnError="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" FormattedText="{x:Null}" SendWindowMessages="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click Text" sap:VirtualizedContainerService.HintSize="334,96" sap2010:WorkflowViewState.IdRef="ClickText_5" KeyModifiers="None" MouseButton="BTN_LEFT" Occurrence="1" Text="Baner">
+              <ui:ClickText.CursorPosition>
+                <ui:CursorPosition Position="Center">
+                  <ui:CursorPosition.OffsetX>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:CursorPosition.OffsetX>
+                  <ui:CursorPosition.OffsetY>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:CursorPosition.OffsetY>
+                </ui:CursorPosition>
+              </ui:ClickText.CursorPosition>
+              <ui:ClickText.Target>
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}">
+                  <ui:Target.TimeoutMS>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:Target.TimeoutMS>
+                  <ui:Target.WaitForReady>
+                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                  </ui:Target.WaitForReady>
+                </ui:Target>
+              </ui:ClickText.Target>
+            </ui:ClickText>
+          </Sequence>
+        </ActivityAction>
+      </ui:OpenBrowser.Body>
+    </ui:OpenBrowser>
+    <Sequence DisplayName="Data Scraping" sap:VirtualizedContainerService.HintSize="476,937" sap2010:WorkflowViewState.IdRef="Sequence_5">
+      <Sequence.Variables>
+        <Variable x:TypeArguments="sd:DataTable" Default="[New System.Data.DataTable]" Name="ExtractDataTable" />
+        <Variable x:TypeArguments="x:String" Name="StrPassword" />
+      </Sequence.Variables>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <ui:BrowserScope Browser="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" BrowserType="IE" DisplayName="Attach Browser 'HotelsNea Page'" sap:VirtualizedContainerService.HintSize="434,344" sap2010:WorkflowViewState.IdRef="BrowserScope_1" InformativeScreenshot="9b11c35319b942c8b5340c57c0dc44cf" Selector="&lt;html title='Hotels Near Baner, Pune from ₹554' /&gt;">
+        <ui:BrowserScope.Body>
+          <ActivityAction x:TypeArguments="x:Object">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
+            </ActivityAction.Argument>
+            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="376,198" sap2010:WorkflowViewState.IdRef="Sequence_4">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <ui:ExtractData DelayBetweenPagesMS="{x:Null}" NextLinkSelector="{x:Null}" ContinueOnError="True" DataTable="[ExtractDataTable]" DisplayName="Extract Structured Data 'DIV'" ExtractMetadata="&lt;extract&gt;&lt;row exact='1'&gt;&lt;webctrl tag='div' class='oyo-row oyo-row--no-spacing ListingHotelCardWrapper' idx='1' /&gt;&lt;webctrl tag='div' class='oyo-cell--12-col oyo-cell--8-col-tablet oyo-cell--4-col-phone' /&gt;&lt;webctrl tag='div' class='oyo-row oyo-row--no-spacing hotelCardListing' idx='1' /&gt;&lt;webctrl tag='div' class='hotelCardListing__descriptionWrapper' idx='1' /&gt;&lt;webctrl tag='div' class='oyo-row oyo-row--no-spacing listingHotelDescription' idx='1' /&gt;&lt;/row&gt;&lt;column name='NAME' attr='text' exact='1'&gt;&lt;webctrl tag='div' class='oyo-row oyo-row--no-spacing ListingHotelCardWrapper' idx='1' /&gt;&lt;webctrl tag='div' class='oyo-cell--12-col oyo-cell--8-col-tablet oyo-cell--4-col-phone' /&gt;&lt;webctrl tag='div' class='oyo-row oyo-row--no-spacing hotelCardListing' idx='1' /&gt;&lt;webctrl tag='div' class='hotelCardListing__descriptionWrapper' idx='1' /&gt;&lt;webctrl tag='div' class='oyo-row oyo-row--no-spacing listingHotelDescription' idx='1' /&gt;&lt;webctrl tag='div' class='oyo-cell--12-col listingHotelDescription__content' idx='1' /&gt;&lt;webctrl tag='div' class='listingHotelDescription__contentWrapper' idx='1' /&gt;&lt;webctrl tag='div' class='listingHotelDescription__contentWrapper--left u-fullWidth' idx='1' /&gt;&lt;webctrl tag='a' class='c-nn640c u-width100' idx='1' /&gt;&lt;webctrl tag='h3' class='listingHotelDescription__hotelName d-textEllipsis' idx='1' /&gt;&lt;/column&gt;&lt;column name='LOCATION' attr='text' exact='1'&gt;&lt;webctrl tag='div' class='oyo-row oyo-row--no-spacing ListingHotelCardWrapper' idx='1' /&gt;&lt;webctrl tag='div' class='oyo-cell--12-col oyo-cell--8-col-tablet oyo-cell--4-col-phone' /&gt;&lt;webctrl tag='div' class='oyo-row oyo-row--no-spacing hotelCardListing' idx='1' /&gt;&lt;webctrl tag='div' class='hotelCardListing__descriptionWrapper' idx='1' /&gt;&lt;webctrl tag='div' class='oyo-row oyo-row--no-spacing listingHotelDescription' idx='1' /&gt;&lt;webctrl tag='div' class='oyo-cell--12-col listingHotelDescription__content' idx='1' /&gt;&lt;webctrl tag='div' class='listingHotelDescription__contentWrapper' idx='1' /&gt;&lt;webctrl tag='div' class='listingHotelDescription__contentWrapper--left u-fullWidth' idx='1' /&gt;&lt;webctrl tag='div' class='d-body-lg listingHotelDescription__hotelAddress' idx='1' /&gt;&lt;webctrl tag='span' class='u-line--clamp-2' idx='1' /&gt;&lt;/column&gt;&lt;column name='PRICE' attr='text' exact='1'&gt;&lt;webctrl tag='div' class='oyo-row oyo-row--no-spacing ListingHotelCardWrapper' idx='1' /&gt;&lt;webctrl tag='div' class='oyo-cell--12-col oyo-cell--8-col-tablet oyo-cell--4-col-phone' /&gt;&lt;webctrl tag='div' class='oyo-row oyo-row--no-spacing hotelCardListing' idx='1' /&gt;&lt;webctrl tag='div' class='hotelCardListing__descriptionWrapper' idx='1' /&gt;&lt;webctrl tag='div' class='oyo-row oyo-row--no-spacing listingHotelDescription' idx='1' /&gt;&lt;webctrl tag='div' class='oyo-cell--12-col listingHotelDescription__priceBtn' idx='1' /&gt;&lt;webctrl tag='div' class='oyo-row oyo-row--no-spacing' idx='1' /&gt;&lt;webctrl tag='div' class='oyo-cell--5-col' idx='1' /&gt;&lt;webctrl tag='div' class='listingPrice' idx='1' /&gt;&lt;webctrl tag='div' class='listingPrice__numbers' idx='1' /&gt;&lt;webctrl tag='span' class='listingPrice__finalPrice' idx='1' /&gt;&lt;/column&gt;&lt;column name='OFFER' attr='text' exact='1'&gt;&lt;webctrl tag='div' class='oyo-row oyo-row--no-spacing ListingHotelCardWrapper' idx='1' /&gt;&lt;webctrl tag='div' class='oyo-cell--12-col oyo-cell--8-col-tablet oyo-cell--4-col-phone' /&gt;&lt;webctrl tag='div' class='oyo-row oyo-row--no-spacing hotelCardListing' idx='1' /&gt;&lt;webctrl tag='div' class='hotelCardListing__descriptionWrapper' idx='1' /&gt;&lt;webctrl tag='div' class='oyo-row oyo-row--no-spacing listingHotelDescription' idx='1' /&gt;&lt;webctrl tag='div' class='oyo-cell--12-col listingHotelDescription__priceBtn' idx='1' /&gt;&lt;webctrl tag='div' class='oyo-row oyo-row--no-spacing' idx='1' /&gt;&lt;webctrl tag='div' class='oyo-cell--5-col' idx='1' /&gt;&lt;webctrl tag='div' class='listingPrice' idx='1' /&gt;&lt;webctrl tag='div' class='listingPrice__numbers' idx='1' /&gt;&lt;webctrl tag='span' class='listingPrice__percentage' idx='1' /&gt;&lt;/column&gt;&lt;/extract&gt;" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="ExtractData_1" MaxNumberOfResults="100" SimulateClick="True">
+                <ui:ExtractData.Target>
+                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="c50fe86dcb80c3ff4dbbcca0252fdff0" Selector="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;section&amp;gt;div' parentid='root' tag='DIV' /&gt;" WaitForReady="COMPLETE">
+                    <ui:Target.TimeoutMS>
+                      <InArgument x:TypeArguments="x:Int32" />
+                    </ui:Target.TimeoutMS>
+                  </ui:Target>
+                </ui:ExtractData.Target>
+              </ui:ExtractData>
+            </Sequence>
+          </ActivityAction>
+        </ui:BrowserScope.Body>
+      </ui:BrowserScope>
+      <ui:WriteRange AddHeaders="True" DataTable="[ExtractDataTable]" DisplayName="Write Range" sap:VirtualizedContainerService.HintSize="434,115" sap2010:WorkflowViewState.IdRef="WriteRange_1" SheetName="Sheet1" WorkbookPath="C:\Users\User\Desktop\OYO Bookings.xlsx">
+        <ui:WriteRange.StartingCell>
+          <InArgument x:TypeArguments="x:String">
+            <Literal x:TypeArguments="x:String" Value="" />
+          </InArgument>
+        </ui:WriteRange.StartingCell>
+      </ui:WriteRange>
+      <ui:GetPassword DisplayName="Get Password" sap:VirtualizedContainerService.HintSize="434,22" sap2010:WorkflowViewState.IdRef="GetPassword_1" ProtectedPassword="AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAP3NmGyF/s0W9xA9Yd6Jg/gAAAAACAAAAAAAQZgAAAAEAACAAAABD+i76FnaCebE6h+EJC/t7jX3lq+tJI69eNZFRC7iV/AAAAAAOgAAAAAIAACAAAACHi8MLifY9lJAT0ZKNmiZEMdddhAcCGL0D3LBSrZUsMRAAAAANEsShmxd+4Op3oRc8VubAQAAAAJBcCQttPgI0sjFmBS+UToFonx6n86g5JukkOzOBVTYM0W+DnffMamJsoLOfDWFI5k5XIF0L08iKVc1xPpHBx2A=" Result="[StrPassword]" />
+      <ui:SendMail Bcc="{x:Null}" Cc="{x:Null}" From="{x:Null}" MailMessage="{x:Null}" Name="{x:Null}" TimeoutMS="{x:Null}" Body="Please check the attached files" DisplayName="Send SMTP Mail Message" Email="pavithrapkite2020@gmail.com" EnableSSL="True" sap:VirtualizedContainerService.HintSize="434,145" sap2010:WorkflowViewState.IdRef="SendMail_1" IsBodyHtml="False" Password="[StrPassword]" Port="465" SecureConnection="Auto" Server="smtp.gmail.com" Subject="QR Code has been successfully generated based on your name" To="pavithra2020pp@gmail.com">
+        <ui:SendMail.Files>
+          <scg:List x:TypeArguments="InArgument(x:String)" Capacity="4">
+            <InArgument x:TypeArguments="x:String">C:\Users\User\Desktop\OYO Bookings.xlsx</InArgument>
+          </scg:List>
+        </ui:SendMail.Files>
+      </ui:SendMail>
+      <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="434,59" sap2010:WorkflowViewState.IdRef="MessageBox_1" Text="[&quot;Mail Send Successfully&quot;]" />
+    </Sequence>
+  </Sequence>
+</Activity>
